@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;600;700&family=Kdam+Thmor+Pro&family=Poppins:wght@200;300;400;800&family=Teko:wght@300;400;500;600&family=Zen+Dots&display=swap');
+:root{
+      --ft-1: 'Advent Pro', sans-serif;
+      --ft-2: 'Kdam Thmor Pro', sans-serif;
+      --ft-3: 'Poppins', sans-serif;
+      --ft-4: 'Teko', sans-serif;
+      --ft-5: 'Zen Dots', cursive;
+
+      --dark-300: #15192a;
+      --dark-200: #1f2334;
+      --dark-100: #3a3e4f;
+      --text-dark: #656b7f;
+      --text-light: #e6e8ed;
+      --light: #fff;
+
+      --facebook: #1877f2;
+      --twitter: #1da1f2;
+}
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body{
+      --theme: #705ffd;
+      min-height: 100%;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      font-family: var(--ft-2);
+      font-size: 62.5%;
+      background: #222;
+      color: var(--text-dark);
+}
+
+:before,
+:after{
+      content: '';
+      position: absolute;
+}
+
+a, span{
+      display: inline-block;
+}
+
+a{
+      text-decoration: none;
+}
+
+img{
+      width: 100%;
+      object-fit: cover;
+}
+
+ul{
+      list-style: none;
+}
+
+h1{
+      font-size: 2rem;
+}
+
+h2{
+      font-size: 1.6rem;
+}
+
+h3{
+      font-size: 1.2rem;
+}
+
+i{
+      width: 22px;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+button{
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background: none;
+      border-radius: .3rem;
+}
+
+.tooltip{
+      --p-x: 0;
+      --p-y: 0;
+      position: relative;
+}
+
+.tooltip[data-tooltip]:before{
+      content: attr(data-tooltip);
+      padding: .5rem 1rem;
+      background: var(--dark-300);
+      color: var(--light);
+      text-transform: uppercase;
+      font-family: var(--ft-1);
+      font-size: .65rem;
+      letter-spacing: 2px;
+      opacity: 0;
+      visibility: hidden;
+      transition: .2s;
+      top: var(--p-y);
+      left: var(--p-x);
+      position: fixed;
+      border: solid 1px var(--theme);
+}
+
+.tooltip[data-tooltip]:hover:before{
+      opacity: 1;
+      visibility: visible;
+      z-index: 999;
+}
+
+.jd_container{
+      width: 94%;
+      max-width: 980px;
+      height: auto;
+      position: relative;
+      margin: 0 auto;
+}
