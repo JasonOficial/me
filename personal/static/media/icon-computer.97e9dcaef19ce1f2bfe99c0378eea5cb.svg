@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="24" viewBox="0 0 36 24">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.108" y1="0.083" x2="0.844" y2="0.833" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d212b8"/>
+      <stop offset="1" stop-color="#6e28e4"/>
+    </linearGradient>
+  </defs>
+  <path id="Icon_material-computer" data-name="Icon material-computer" d="M30,27a3,3,0,0,0,2.985-3L33,9a3.009,3.009,0,0,0-3-3H6A3.009,3.009,0,0,0,3,9V24a3.009,3.009,0,0,0,3,3H0v3H36V27ZM6,9H30V24H6Z" transform="translate(0 -6)" fill="url(#linear-gradient)"/>
+</svg>
